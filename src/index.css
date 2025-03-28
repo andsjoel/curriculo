@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Potato;
+  src:url(./assets/fonts/potato_sans/Potato_sans-Black.otf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Forta;
+  src:url(./assets/fonts/forta/Forta.ttf);
+}
+
+@font-face {
+  font-family: LineNexa;
+  src:url(./assets/fonts/lineNexa/lineNexa.ttf);
+}
+
+@font-face {
+  font-family: stanBerry;
+  src:url(./assets/fonts/stanberry/Stanberry.ttf);
+}
+
+@font-face {
+  font-family: Bubble;
+  src:url(./assets/fonts/umberto/umberto.ttf);
+}
+
+:root {
+  --bg: #17102e;
+  --primary-color: #f3f3f3;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 28px;
+}
+
+::-webkit-scrollbar-thumb {
+  margin: 5px;
+  border-radius: 10px;
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  background-color: rgba(55, 51, 73, 0.493);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  overflow-x: hidden;
+}
+
+main {
+  height: 100vh;
+  /* overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/images/noise3.jpg') repeat center;
+  mix-blend-mode: screen;
+  opacity: .3;
+  animation: noiseEffect 1s steps(10) infinite;
+  z-index: -1;
+}
+
+main section {
+  scroll-snap-align: start;
+}
+
+@keyframes noiseEffect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }

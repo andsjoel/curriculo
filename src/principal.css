@@ -1,0 +1,41 @@
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+}
+
+.cursor-dot, .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    pointer-events: none;
+    transition: width 1s ease, height 1s ease;
+}
+
+.cursor-in {
+    width: 150px;
+    height: 150px;
+    border: 4px dashed white;
+    animation: girar 5s linear infinite;
+    transition: width .5s ease, height .5s ease; /* Transição suave no tamanho */
+    transform-origin: center;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+@keyframes girar {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
