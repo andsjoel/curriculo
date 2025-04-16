@@ -1,7 +1,9 @@
 header {
-    background-color: var(--bg--detail);
+    /* background-color: var(--bg--detail); */
     width: 100vw;
     height: 20em;
     position: fixed;
     top: 0;
+    z-index: 999;
 }
+

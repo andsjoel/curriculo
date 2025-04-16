@@ -44,6 +44,7 @@ const Initial = () => {
     return (
         <section id="initial">
             <div className="initial-name">
+                <div className="bg-home"></div>
                 <p className="domenico dome">
                     {["D", "O", "M", "Ê"].map((letter, idx) => (
                         <span
@@ -73,8 +74,19 @@ const Initial = () => {
                 </p>
             </div>
 
-            <div className="conhecer-mais">
-                <p>↓ Venha me conhecer melhor...</p>
+            <div className="buttons-initial">
+                <div className="resume">
+                    <a>
+                        <span>→</span>
+                        <p>veja um resumo</p>
+                    </a>
+                </div>
+                <div className="conhecer-mais">
+                    <a>
+                        <span>↓</span>
+                        <p>conheça mais</p>
+                    </a>
+                </div>
             </div>
         </section>
     );

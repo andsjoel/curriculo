@@ -15,6 +15,7 @@ const Home = () => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
+    
     const wheresMouse = (wheres) => {
         setCursorWhere(wheres);
     }
