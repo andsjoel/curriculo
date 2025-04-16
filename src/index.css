@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: Forta;
+  src: url(./assets//fonts/forta/Forta.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: LineNexa;
+  src:url(./assets/fonts/lineNexa/lineNexa.ttf);
+}
+
+:root {
+  --bg--claro: rgb(187, 187, 187);
+  --bg--escuro: rgb(33, 33, 33);
+
+  --bg--detail: rgb(223, 223, 70);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg--claro);
+  overflow-x: hidden;
+}
+
+main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./assets/images/noise3.jpg') repeat center;
+  mix-blend-mode: screen;
+  opacity: 1;
+  animation: noiseEffect 1s steps(10) infinite;
+  z-index: -1;
+}
+
+@keyframes noiseEffect {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
 }

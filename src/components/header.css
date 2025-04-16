@@ -1,0 +1,7 @@
+header {
+    background-color: var(--bg--detail);
+    width: 100vw;
+    height: 300px;
+    position: fixed;
+    top: 0;
+}
