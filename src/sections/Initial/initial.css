@@ -10,8 +10,8 @@
 .bg-home {
     position: absolute;
     top: 0;
-    width: 110vw;
-    height: 300px;
+    width: 100%;
+    height: 200px;
     background-color: var(--bg--detail);
 }
 
@@ -27,10 +27,10 @@
 
 .domenico {
     position: absolute;
-    font-size: 40vh;
+    font-size: 35vh;
     color: rgb(92, 67, 117);
     cursor: default;
-    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     pointer-events: none;
 }
@@ -53,8 +53,6 @@
 }
 
 .tela-meio {
-    /* position: relative; */
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,8 +70,8 @@
 
 .buttons-initial {
     position: absolute;
-    left: 100px;
-    bottom: 100px;
+    left: 50px;
+    bottom: 50px;
 }
 
 .conhecer-mais a, .resume a {
@@ -81,11 +79,11 @@
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .conhecer-mais span, .resume span {
-    font-size: 50px;
+    font-size: 30px;
     margin-right: 10px;
 }
 
@@ -117,7 +115,7 @@
     /* color: white; */
     /* height: 70px; */
     padding: 0 40px;
-    width: 300px;
+    width: 260px;
   }
 
 .buttons-initial a:hover {

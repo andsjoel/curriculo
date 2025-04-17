@@ -22,7 +22,7 @@ const Home = () => {
     }
 
     return (
-        <main>
+        <main id='main'>
             <div style={{left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`}} className="cursor-dot"></div>
             <div style={{left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`}} className={`cursor-outline ${cursorWhere ? 'cursor-in' : ''}`}></div>
             <Header />

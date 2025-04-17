@@ -4,6 +4,18 @@ import "./HamburgerMenu.css";
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleScroll = (e) => {
+    const scroll = e.target.scrolTop;
+
+    console.log(scroll);
+    
+      // if (scroll > 1) {
+      //   setIsOpen(false)
+      // }
+  }
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
     <div className={`${isOpen ? "hamburger-container-open" : "hamburger-container"}`}>
       <div

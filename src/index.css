@@ -47,9 +47,9 @@ main::before {
   z-index: -1;
 }
 
-main section {
+/* main section {
   scroll-snap-align: start;
-}
+} */
 
 @keyframes noiseEffect {
   0% {
