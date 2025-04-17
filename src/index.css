@@ -26,6 +26,14 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 main::before {
   content: '';
   position: absolute;
@@ -34,9 +42,13 @@ main::before {
   height: 100%;
   background: url('./assets/images/noise3.jpg') repeat center;
   mix-blend-mode: screen;
-  opacity: 1;
+  opacity: .8;
   animation: noiseEffect 1s steps(10) infinite;
   z-index: -1;
+}
+
+main section {
+  scroll-snap-align: start;
 }
 
 @keyframes noiseEffect {

@@ -1,0 +1,10 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    height: 100vh;
+    min-width: 100vw;
+    font-family: 'lineNexa';
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(52, 105, 141) 100%);
+    /* background-color: red; */
+}

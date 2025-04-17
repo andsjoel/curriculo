@@ -2,8 +2,10 @@ header {
     /* background-color: var(--bg--detail); */
     width: 100vw;
     height: 20em;
-    position: fixed;
+    position: absolute;
     top: 0;
-    z-index: 999;
+    /* display: flex;
+    justify-content: end;
+    padding: 25px 50px; */
 }
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./initial.css";
-import Domenicozin from "../assets/images/domenicozin.png";
+import Domenicozin from "../../assets/images/domenicozin.png";
 
 const Initial = () => {
     const lettersRef = useRef([]);
@@ -76,15 +76,15 @@ const Initial = () => {
 
             <div className="buttons-initial">
                 <div className="resume">
-                    <a>
+                    <a href="#">
                         <span>→</span>
                         <p>veja um resumo</p>
                     </a>
                 </div>
                 <div className="conhecer-mais">
-                    <a>
+                    <a href="#about">
                         <span>↓</span>
-                        <p>conheça mais</p>
+                        <p>me conheça mais</p>
                     </a>
                 </div>
             </div>

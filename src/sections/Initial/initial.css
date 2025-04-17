@@ -10,7 +10,7 @@
 .bg-home {
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 110vw;
     height: 300px;
     background-color: var(--bg--detail);
 }
@@ -91,8 +91,7 @@
 
 .conhecer-mais, .resume {
     background-color: var(--bg--detail);
-    height: 55px;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     border: 2px solid black;
     box-shadow: 5px 5px 0px rgb(0, 0, 0);
     font-family: 'LineNexa';
@@ -103,54 +102,28 @@
     align-items: center;
 }
 
-/* .conhecer-mais {
-    width: 250px;
-    position: absolute;
-    left: 100px;
-    bottom: 100px;
-    background-color: var(--bg--detail);
-    padding: 2px 25px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-    font-family: 'LineNexa';
-    cursor: pointer;
+.conhecer-mais a, .resume a {
+    text-decoration: none;
+    color: var(--bg--escuro);
+    padding: 0 25px;
 }
 
-.conhecer-mais a {
+.buttons-initial a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.conhecer-mais span {
-    font-size: 50px;
-    margin-right: 10px;
-}
-
-.resume {
-    width: 250px;
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
-    background-color: var(--bg--claro);
-    padding: 2px 25px;
-    border: 2px solid black;
-    box-shadow: 5px 5px 0px rgb(0, 0, 0);
-    font-family: 'LineNexa';
+    box-shadow: inset 0 0 0 0 var(--bg--escuro);
+    transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
     cursor: pointer;
-}
+    /* color: white; */
+    /* height: 70px; */
+    padding: 0 40px;
+    width: 300px;
+  }
 
-.resume a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-}
+.buttons-initial a:hover {
+    color: #fff;
+    box-shadow: inset 500px 0 0 0 #ba85be;
+    /* font-weight: 700; */
+    width: 100%;
+  }
 
-.resume span {
-    font-size: 50px;
-    margin-right: 10px;
-} */

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import Initial from "../sections/Initial";
+import Initial from "../sections/Initial/Initial";
 import "./home.css";
-import Header from '../components/Header';
+import Header from '../components/header/Header';
+import About from '../sections/About/About';
 
 const Home = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -15,7 +16,7 @@ const Home = () => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-    
+
     const wheresMouse = (wheres) => {
         setCursorWhere(wheres);
     }
@@ -26,6 +27,7 @@ const Home = () => {
             <div style={{left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px`}} className={`cursor-outline ${cursorWhere ? 'cursor-in' : ''}`}></div>
             <Header />
             <Initial />
+            <About />
         </main>
     );
 }
