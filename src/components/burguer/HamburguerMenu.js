@@ -1,23 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./HamburgerMenu.css";
 
-const HamburgerMenu = () => {
+const HamburgerMenu = ({ receiveState }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleScroll = (e) => {
-    const scroll = e.target.scrolTop;
-
-    console.log(scroll);
-    
-      // if (scroll > 1) {
-      //   setIsOpen(false)
-      // }
-  }
-
-  window.addEventListener("scroll", handleScroll);
+  useEffect(() => {
+    receiveState(isOpen);
+  }, [isOpen, receiveState]);
 
   return (
-    <div className={`${isOpen ? "hamburger-container-open" : "hamburger-container"}`}>
+    <div className={`burger ${isOpen ? "hamburger-container-open" : "hamburger-container"}`}>
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
@@ -29,9 +21,9 @@ const HamburgerMenu = () => {
 
       <nav className={`menu ${isOpen ? "menu-open" : ""}`}>
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Habilidades</a></li>
+          <li><a href="#initial">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
           <li><a href="#">Projetos</a></li>
           <li><a href="#">Contato</a></li>
         </ul>

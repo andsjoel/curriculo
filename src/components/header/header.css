@@ -1,11 +1,77 @@
 header {
-    /* background-color: var(--bg--detail); */
+    background-color: var(--bg--detail);
     width: 100vw;
-    height: 20em;
-    position: absolute;
+    height: 200px;
+    position: fixed;
     top: 0;
-    /* display: flex;
+    z-index: 10;
+    display: flex;
     justify-content: end;
-    padding: 25px 50px; */
+    padding: 25px 50px;
 }
+
+.bg-home {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 180px;
+    background-color: var(--bg--detail);
+    /* z-index: -1; */
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+.bg-next {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    /* height: 100vh; */
+    background-color: var(--bg--detail);
+    /* z-index: -1; */
+    transition: width 1s ease-out, height 1s ease-out;
+}
+
+.burguerOpen.bg-next {
+    width: 200px;
+    transition: width .3s ease-out, height 1s ease-out;
+    height: 100vh;
+}
+
+
+/* ################## */
+
+.header-icons {
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-icons.open.icons-active {
+    bottom: 0;
+    right: 60px;
+    animation: test 2s;
+}
+
+.header-icons a {
+    cursor: pointer;
+    margin: 20px 0;
+    z-index: 999;
+}
+
+.header-icons img{
+    width: 55px;
+}
+
+@keyframes test {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 

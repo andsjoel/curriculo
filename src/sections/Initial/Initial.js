@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./initial.css";
 import Domenicozin from "../../assets/images/domenicozin.png";
 
@@ -6,6 +6,30 @@ const Initial = () => {
     const lettersRef = useRef([]);
     const imageRef = useRef(null);
     const sensitivityFactors = useRef([]);
+
+    // const [scrollTop, setscrollTop] = useState(false);
+
+    // useEffect(() => {
+    //     const mainListener = document.getElementById("main");
+    
+    //     const handleScroll = (e) => {
+    //         if (mainListener.scrollTop > 100){
+    //             setscrollTop(true);             
+    //         } else {
+    //             setscrollTop(false);
+    //         }
+    //     };
+    
+    //     if (mainListener) {
+    //         mainListener.addEventListener("scroll", handleScroll);
+    //     }
+    
+    //     return () => {
+    //         if (mainListener) {
+    //             mainListener.removeEventListener("scroll", handleScroll);
+    //         }
+    //     };
+    // }, []);
 
     useEffect(() => {
         sensitivityFactors.current = lettersRef.current.map(() => ({
@@ -44,7 +68,7 @@ const Initial = () => {
     return (
         <section id="initial">
             <div className="initial-name">
-                <div className="bg-home"></div>
+                {/* <div className={`${!scrollTop ? 'bg-home' : 'bg-next'}`}></div> */}
                 <p className="domenico dome">
                     {["D", "O", "M", "Ê"].map((letter, idx) => (
                         <span

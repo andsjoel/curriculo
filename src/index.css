@@ -15,6 +15,10 @@
   --bg--detail: rgb(223, 223, 70);
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -47,9 +51,9 @@ main::before {
   z-index: -1;
 }
 
-/* main section {
+main section {
   scroll-snap-align: start;
-} */
+}
 
 @keyframes noiseEffect {
   0% {

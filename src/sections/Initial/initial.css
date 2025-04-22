@@ -7,14 +7,6 @@
     position: relative;
 }
 
-.bg-home {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 200px;
-    background-color: var(--bg--detail);
-}
-
 .initial-name {
     display: flex;
     justify-content: center;
@@ -38,6 +30,7 @@
 .dome {
     top: 50px;
     left: 50px;
+    z-index: 15;
 }
 
 .nico {
@@ -57,6 +50,7 @@
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    z-index: 15;
 }
 
 .tela-meio img {
@@ -72,6 +66,7 @@
     position: absolute;
     left: 50px;
     bottom: 50px;
+    z-index: 15;
 }
 
 .conhecer-mais a, .resume a {

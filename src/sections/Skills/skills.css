@@ -1,0 +1,11 @@
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'lineNexa';
+    position: relative;
+    /* background: linear-gradient(180deg, rgba(52, 105, 141) 0%, rgb(52, 105, 141, 0) 100%); */
+    background-color: var(--bg--escuro);
+}

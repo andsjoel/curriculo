@@ -3,6 +3,7 @@ import Initial from "../sections/Initial/Initial";
 import "./home.css";
 import Header from '../components/header/Header';
 import About from '../sections/About/About';
+import Skills from '../sections/Skills/Skills';
 
 const Home = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -28,6 +29,7 @@ const Home = () => {
             <Header />
             <Initial />
             <About />
+            <Skills />
         </main>
     );
 }

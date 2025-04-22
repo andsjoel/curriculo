@@ -1,18 +1,15 @@
-#main-org {
-    width: 1920px;
-    background-color: red;
-}
-
 .cursor-dot {
     width: 5px;
     height: 5px;
     background-color: var(--bg--escuro);
+    z-index: 10000;
 }
 
 .cursor-outline {
     width: 30px;
     height: 30px;
     border: 2px solid var(--bg--escuro);
+    z-index: 10000;
 }
 
 .cursor-dot, .cursor-outline {
