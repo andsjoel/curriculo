@@ -158,3 +158,83 @@
     height: 100%;
     --b: 70%;
   }
+
+  .gallery-toggle {
+    position: absolute;
+    inset: calc(20% - var(--s)/3);
+    cursor: pointer;
+    z-index: 10;
+    /* você pode adicionar uma borda, ícone, ou deixá-lo invisível */
+  }
+
+
+  @media (max-width: 768px) {
+    #about {
+      /* height: 100vh; */
+      padding-bottom: 40px;
+    }
+
+    #about h2 {
+        font-size: 15px;
+    }
+
+    #about h2 span {
+        font-size: 35px !important;
+        margin-right: -5px !important;
+    }
+  
+    .about-content {
+      flex-direction: column;
+      padding: 30px 20px;
+      gap: 40px;
+      /* align-items: center; */
+    }
+  
+    .about-left {
+      width: 100%;
+      /* text-align: center; */
+    }
+  
+    .about-left-text {
+      font-size: 24px;
+      line-height: 1.5;
+    }
+  
+    .tags {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -20px;
+    }
+  
+    .tags p {
+      margin: 8px;
+      font-size: 18px;
+    }
+  
+    .tags p span {
+      font-size: 28px;
+    }
+  
+    .about-right {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gallery {
+      --s: 100px;
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      margin-top: -50px;
+      margin-bottom: 20px;
+      transform: scale(0.95);
+    }
+  
+    .gallery > img {
+      width: var(--s);
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+  }
+  
+  

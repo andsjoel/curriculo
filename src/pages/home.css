@@ -32,3 +32,13 @@
     transform-origin: center;
     transform: translate(-50%, -50%) rotate(0deg);
 }
+
+@media (max-width: 768px) {
+    .cursor-dot {
+        background-color: transparent;
+    }
+
+    .cursor-outline {
+        border: none;
+    }
+}

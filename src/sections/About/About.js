@@ -32,8 +32,9 @@ const About = () => {
 
         <div className="about-right">
             
-            <div class="gallery">
-            <input type="checkbox" />
+            <div className="gallery">
+            <input type="checkbox" id="toggle-gallery" />
+            <label htmlFor="toggle-gallery" className="gallery-toggle"></label>
                 <img src={ carrossel01 } alt="a forest after an apocalypse" />
                 <img src={ carrossel02 } alt="a waterfall and many rocks"/>
                 <img src={ carrossel03 } alt="a house on a mountain"/>

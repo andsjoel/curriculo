@@ -40,9 +40,15 @@ const Header = () => {
         <header className={`${!scrollTop ? 'bg-home' : 'bg-next'} ${isOpen ? 'burguerOpen' : 'burguerClose'}`}>
             <HamburgerMenu receiveState={handleStateFromBurger} />
             <div className={`header-icons ${isOpen ? 'open' : ''} ${!scrollTop ? '' : 'icons-active'}`}>
-                <a><img src={ iconInsta } /></a>
-                <a><img src={ iconGithub } /></a>
-                <a><img src={ iconWpp } /></a>
+                <a href="https://www.instagram.com/doconime" target="_blank" rel="noopener noreferrer">
+                    <img src={iconInsta} alt="Instagram" />
+                </a>
+                <a href="https://github.com/andsjoel" target="_blank" rel="noopener noreferrer">
+                    <img src={iconGithub} alt="GitHub" />
+                </a>
+                <a href="https://wa.me/61999760064" target="_blank" rel="noopener noreferrer">
+                    <img src={iconWpp} alt="WhatsApp" />
+                </a>
             </div>
         </header>
     );

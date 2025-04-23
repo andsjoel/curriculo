@@ -77,3 +77,56 @@ header {
     }
   }
 
+  @media (max-width: 768px)  {
+    header {
+        padding: 20px 10px;
+    }
+    
+    /* .bg-home {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 180px;
+        background-color: var(--bg--detail);
+        transition: width 1s ease-out, height 1s ease-out;
+    } */
+    
+    .bg-next {
+        width: 130px;
+        height: 70px;
+    }
+    
+    .burguerOpen.bg-next {
+        width: 100%;
+        height: 200px;
+        border-bottom: 2px solid var(--bg--escuro);
+        border-left: none;
+
+    }
+    
+    .header-icons {
+        position: absolute;
+        bottom: 0;
+        right: -100px;
+        display: flex;
+        flex-direction: row;
+        opacity: 0;
+    }
+    
+    .header-icons.open.icons-active {
+        /* bottom: 200px; */
+        opacity: 1;
+        right: 0;
+        animation: test 2s;
+    }
+    
+    .header-icons img{
+        width: 35px;
+    }
+
+    .header-icons a {
+        margin: 0 15px;
+        z-index: 999;
+    }
+  }
