@@ -156,28 +156,15 @@
     flex-direction: column;
     /* margin: 0 15px; */
     width: 200px;
-    height: 300px;
+    height: 100%;
     transition: color 2s ease, background-color 5s ease;
 }
 
 .geral div span {
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .geral div p {
     color: var(--bg--escuro);
-    transition: color 1s ease;
-}
-
-.geral div:hover {
-    background-color: var(--bg--escuro);
-    color: var(--bg--claro);
-    width: 200px;
-    height: 300px;
-    transition: color 2s ease, background-color .5s ease;
-}
-
-.geral div:hover p {
-    color: var(--bg--claro);
     transition: color 1s ease;
 }
