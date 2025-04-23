@@ -8,13 +8,14 @@ import carrossel06 from "../../assets/images/carrossel-about/carrossel06.png";
 import carrossel07 from "../../assets/images/carrossel-about/carrossel07.png";
 import carrossel08 from "../../assets/images/carrossel-about/carrossel08.png";
 import carrossel09 from "../../assets/images/carrossel-about/carrossel09.png";
+import Skills from "../Skills/Skills";
 
 const About = () => {
   const aboutText = "estudante multidisciplinar. Desenvolvedor web, ilustrador e tatuador transformando o caos em criatividade.";
 
   return (
     <section id="about">
-      <h2><span>/</span>quem sou eu?</h2>
+      <h2 className="about-title"><span>/</span>quem sou eu?</h2>
       <div className='about-content'>
         <div className='about-left'>
           <p className='about-left-text'>
@@ -46,6 +47,7 @@ const About = () => {
 
           </div>
       </div>
+      {/* <Skills /> */}
     </section>
   );
 }

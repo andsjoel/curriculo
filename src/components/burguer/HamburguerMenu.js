@@ -21,11 +21,10 @@ const HamburgerMenu = ({ receiveState }) => {
 
       <nav className={`menu ${isOpen ? "menu-open" : ""}`}>
         <ul>
-          <li><a href="#initial">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#skills">Habilidades</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><a href="#initial">o começo</a></li>
+          <li><a href="#about">vem me conhecer</a></li>
+          <li><a href="#skills">sei de coisas</a></li>
+          <li><a href="#contact">mande um oi</a></li>
         </ul>
       </nav>
     </div>

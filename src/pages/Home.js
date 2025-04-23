@@ -4,6 +4,7 @@ import "./home.css";
 import Header from '../components/header/Header';
 import About from '../sections/About/About';
 import Skills from '../sections/Skills/Skills';
+import Contact from '../sections/Contact/Contact';
 
 const Home = () => {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -30,6 +31,7 @@ const Home = () => {
             <Initial />
             <About />
             <Skills />
+            <Contact />
         </main>
     );
 }

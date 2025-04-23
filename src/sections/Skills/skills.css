@@ -1,11 +1,183 @@
 #skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     font-family: 'lineNexa';
     position: relative;
-    /* background: linear-gradient(180deg, rgba(52, 105, 141) 0%, rgb(52, 105, 141, 0) 100%); */
+    background-color: var(--bg--detail);
+}
+
+#skills .skills-title {
+    color: var(--bg--escuro);
+    margin: 20px;
+    width: 100vw;
+}
+
+#skills .skills-title span {
+    font-size: 60px;
+    margin: 20px;
+}
+
+.display-one, .display-two {
+    position: relative;
+    width: 100%;
+    /* border-top: 3px solid var(--bg--escuro); */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Forta';
+    transition: height 1s ease, align-items 1s ease;
+    color: var(--bg--escuro);
+    background-color: transparent;
+    padding-left: 50px;
+
+}
+
+.front-end, .back-end {
+    display: flex;
+    align-items: center;
+}
+
+.display-two { 
+    border-bottom: 3px solid var(--bg--escuro);
+}
+
+.front, .traco, .end, .back, .hashtag {
+    font-size: 70px;
+    background-color: transparent;
+}
+
+.traco {
+    width: 65px;
+    height: 15px;
     background-color: var(--bg--escuro);
+    margin: 15px;
+}
+
+
+.display-one > .front-end .traco, .display-two > .back-end .traco {
+    transition: margin 2s cubic-bezier(0.77, 0, 0.175, 1),
+                transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.display-one:hover > .front-end .traco, .display-two:hover > .back-end .traco {
+    transform: scaleX(10);
+    margin: 0 400px;
+    transition: margin 2s cubic-bezier(0.77, 0, 0.175, 1),
+            transform 2s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.display-one:hover, .display-two:hover {
+    transition: height 2s ease, align-items 2s ease;
+    cursor: pointer;
+}
+
+.icon-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    animation: fadeIn 1s ease forwards;
+    font-size: 40px;
+    color: var(--bg--escuro);
+}
+
+.traco {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+
+.icon-slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    gap: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /* opacity: 0; */
+    transition: transform 1s ease, opacity 1s ease, top 1s ease;
+    color: var(--bg--escuro);
+}
+
+.icon-slide.show {
+
+}
+
+.icon-slide div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(-7px);
+    transition: opacity 1s ease;
+}
+
+.icon-slide div span {
+    font-size: 5px;
+    /* padding-bottom: 20px; */
+    transition: font-size 2s ease;
+}
+
+.icon-slide div p {
+    font-family: 'LineNexa';
+}
+
+.icon-slide.show div {
+    opacity: 1;
+    transition: opacity 2s ease;
+}
+
+.icon-slide.show div span {
+    font-size: 35px;
+    transition: font-size 2s ease;
+}
+
+.geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--bg--escuro);   
+    width: 100%;
+    padding: 0 50px;
+}
+
+.geral div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0 15px; */
+    width: 200px;
+    height: 300px;
+    transition: color 2s ease, background-color 5s ease;
+}
+
+.geral div span {
+    font-size: 100px;
+}
+
+.geral div p {
+    color: var(--bg--escuro);
+    transition: color 1s ease;
+}
+
+.geral div:hover {
+    background-color: var(--bg--escuro);
+    color: var(--bg--claro);
+    width: 200px;
+    height: 300px;
+    transition: color 2s ease, background-color .5s ease;
+}
+
+.geral div:hover p {
+    color: var(--bg--claro);
+    transition: color 1s ease;
 }

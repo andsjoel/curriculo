@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./initial.css";
 import Domenicozin from "../../assets/images/domenicozin.png";
+import Curriculo from "../../assets/AndersonJoel_CV.pdf"
 
 const Initial = () => {
     const lettersRef = useRef([]);
@@ -100,7 +101,7 @@ const Initial = () => {
 
             <div className="buttons-initial">
                 <div className="resume">
-                    <a href="#">
+                    <a href={ Curriculo } target="_blank" rel="noopener noreferrer">
                         <span>→</span>
                         <p>veja um resumo</p>
                     </a>

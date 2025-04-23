@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-width: 100vw;
+    /* min-width: 100vw; */
     font-family: 'lineNexa';
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(52, 105, 141) 100%);
 }
 
-#about h2 {
+#about .about-title {
     color: var(--bg--detail);
     /* margin: 20px; */
     background-color: var(--bg--escuro);
     width: 100vw;
 }
 
-#about h2 span {
+#about .about-title span {
     font-size: 60px;
     margin: 20px;
 }
